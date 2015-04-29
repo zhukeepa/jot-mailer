@@ -1,0 +1,6 @@
+<%= form_for :mail, url: { action: 'send_mail', controller: 'jot' }, remote: true do |f| %>
+  To: <%= f.text_field :to %><br />
+  Subject : <%= f.text_field :subject %><br />
+  Body: <%= f.text_area :body %><br />
+  <%= f.submit %>
+<% end %>
